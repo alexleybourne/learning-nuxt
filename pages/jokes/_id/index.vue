@@ -1,6 +1,9 @@
 <template>
     <div>
-      {{ this.joke }}
+        <nuxt-link to="/jokes">Back to Jokes</nuxt-link>
+        <h2>{{ this.joke }}</h2>
+        <hr/>
+        <small>Joke ID: {{ $route.params.id }}</small>
     </div>
 </template>
 
