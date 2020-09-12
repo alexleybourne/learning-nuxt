@@ -3,9 +3,17 @@
     <div>
       <Logo />
       <h1 class="title">
-        dadjokes
+        NUXT
       </h1>
       <div class="links">
+        <a
+          href="https://nuxtjs.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="button--green"
+        >
+          Documentation
+        </a>
         <a
           href="/about"
           rel="noopener noreferrer"
