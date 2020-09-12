@@ -27,7 +27,20 @@
 </template>
 
 <script>
-export default {}
+export default {
+  head() {
+    return {
+      title: "About the app",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: "Best place for corny dad jokes",
+        }
+      ]
+    }
+  }
+}
 </script>
 
 <style>
