@@ -3,15 +3,15 @@
     <div>
       <Logo />
       <h1 class="title">
-        dadjokes
+        About
       </h1>
       <div class="links">
         <a
-          href="/about"
+          href="/"
           rel="noopener noreferrer"
           class="button--grey"
         >
-          About
+          Home
         </a>
       </div>
     </div>
