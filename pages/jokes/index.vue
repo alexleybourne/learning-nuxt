@@ -1,5 +1,6 @@
 <template>
     <div>
+      <SearchJokes v-on:search-text="searchText" />
       <Joke v-for="joke in jokes" :key="joke.id" :id="joke.id" :joke="joke.joke"/>
     </div>
 </template>
@@ -10,23 +11,31 @@ import axios from "axios";
 export default {
   data() {
     return {
-      jokes: []
+      jokes: [],
+      config: {
+        headers: {
+          'Accept': 'application/json'
+        }
+      }
     }
   },
   async created() {
-    const config = {
-      headers: {
-        'Accept': 'application/json'
-      }
-    }
-
     try {
-      const res = await axios.get('https://icanhazdadjoke.com/search', config);
+      const res = await axios.get('https://icanhazdadjoke.com/search', this.config);
       this.jokes = res.data.results;
     } catch (err) {
       console.log(err);
     }
-    
+  },
+  methods: {
+    async searchText(text) {
+      try {
+      const res = await axios.get(`https://icanhazdadjoke.com/search?term=${text}`, this.config);
+      this.jokes = res.data.results;
+    } catch (err) {
+      console.log(err);
+    }
+    }
   },
   head() {
     return {
@@ -39,7 +48,7 @@ export default {
         }
       ]
     }
-  }
+  },
 }
 </script>
 
