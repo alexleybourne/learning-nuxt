@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div>
-      
+      <h2>The best bad jokes on the internet.</h2>
     </div>
   </div>
 </template>
