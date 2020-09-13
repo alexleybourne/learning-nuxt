@@ -49,4 +49,14 @@ export default {
     border-radius: 25px;
 }
 
+@media only screen and (max-width: 600px) {
+    ul {
+        flex-direction: column;
+    }
+
+    li {
+        margin: 2px;
+    }
+}
+
 </style>
