@@ -1,6 +1,9 @@
 <template>
   <header class="header">
-      <h1 class="title">Dad Jokes</h1>
+      <div class="logo">
+          <img class="header-image" src="~/assets/Emoji.png" />
+        <h1 class="title">Dad Jokes</h1>
+      </div>
       <ul class="menus">
           <li>
               <nuxt-link to="/">Home</nuxt-link>
@@ -21,7 +24,8 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+
 .header {
     display:flex;
     justify-content:space-between;
@@ -29,6 +33,17 @@ export default {
     margin-bottom: 1rem;
     padding-bottom:1rem;
     border-bottom: 1px dotted #ccc;
+}
+
+.logo {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.header-image {
+    width: 70px;
+    height: auto;
 }
 
 .header .title {

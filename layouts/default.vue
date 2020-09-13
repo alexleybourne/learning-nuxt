@@ -23,7 +23,7 @@
   }
 </script>
 
-<style>
+<style lang="scss">
   * {
     box-sizing: border-box;
     margin: 0;
@@ -54,11 +54,26 @@
     background: #fff;
   }
 
+  input {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
   button {
-    padding: 4px;
-    margin-top: 10px;
-    background: white;
-    border-radius: 20px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
   }
 
 </style>
