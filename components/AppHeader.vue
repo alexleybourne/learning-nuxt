@@ -1,9 +1,6 @@
 <template>
   <header class="header">
-      <div class="logo">
-          <img class="header-image" src="~/assets/Emoji.png" />
-        <h1 class="title">Dad Jokes</h1>
-      </div>
+    <h1 class="title">Dad Jokes.</h1>
       <ul class="menus">
           <li>
               <nuxt-link to="/">Home</nuxt-link>
@@ -26,29 +23,20 @@ export default {
 
 <style lang="scss">
 
+$mainColor: #3e97e6;
+
 .header {
     display:flex;
     justify-content:space-between;
     align-items:center;
     margin-bottom: 1rem;
     padding-bottom:1rem;
-    border-bottom: 1px dotted #ccc;
-}
-
-.logo {
-    display:flex;
-    align-items:center;
-    justify-content:center;
-}
-
-.header-image {
-    width: 70px;
-    height: auto;
+    border-bottom: 1px dotted $mainColor;
 }
 
 .header .title {
     font-size:3rem;
-    color: #526488;
+    color: $mainColor;
 }
 
 .header ul {
@@ -57,11 +45,16 @@ export default {
 
 .header a {
     display: inline-block;
-    background: #333;
+    background: #0074D9;
     color: #fff;
     padding: 0.3rem 1rem;
     margin-right: 0.5rem;
     border-radius: 25px;
+    transition-duration: 0.4s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
 @media only screen and (max-width: 600px) {
