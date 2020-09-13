@@ -33,7 +33,6 @@ export default {
   methods: {
     async getJoke() {
 
-      console.log('POG')
       const config = {
         headers: {
           'Accept': 'application/json'

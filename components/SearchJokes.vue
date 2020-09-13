@@ -30,10 +30,22 @@ export default {
     display:flex;
     align-items:center;
     justify-content:center;
-  }
+    width:100%;
 
-  button {
-    margin: 0 10px;
+    input {
+      width: 80%;
+    }
+
+    input:focus {
+      outline: none !important;
+      border:1px solid $mainColor;
+    }
+
+    button {
+      width: 20%;
+      margin: 0 10px;
+    }
+
   }
 
 </style>
