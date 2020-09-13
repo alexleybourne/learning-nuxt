@@ -53,4 +53,12 @@
     padding: 1rem 2rem;
     background: #fff;
   }
+
+  button {
+    padding: 4px;
+    margin-top: 10px;
+    background: white;
+    border-radius: 20px;
+  }
+
 </style>
