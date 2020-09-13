@@ -5,6 +5,7 @@
       <br>
       <h3>Random Joke:</h3>
       <h2>{{ this.joke }}</h2>
+      <button @click='getJoke()' >New joke</button>
     </div>
 </template>
 
@@ -29,20 +30,27 @@ export default {
       joke: '',
     }
   },
-  async created() {
-    const config = {
-      headers: {
-        'Accept': 'application/json'
+  methods: {
+    async getJoke() {
+
+      console.log('POG')
+      const config = {
+        headers: {
+          'Accept': 'application/json'
+        }
+      }
+
+      try {
+        const res = await axios.get(`https://icanhazdadjoke.com/`, config);
+        console.log(res);
+        this.joke = res.data.joke
+      } catch (err) {
+        console.log(err);
       }
     }
-
-    try {
-      const res = await axios.get(`https://icanhazdadjoke.com/`, config);
-      console.log(res);
-      this.joke = res.data.joke
-    } catch (err) {
-      console.log(err);
-    }
+  },
+  created() {
+    this.getJoke();
   }
 }
 </script>
