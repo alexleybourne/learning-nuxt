@@ -24,6 +24,9 @@
 </script>
 
 <style lang="scss">
+
+  $mainColor: #3e97e6;
+
   * {
     box-sizing: border-box;
     margin: 0;
@@ -65,7 +68,7 @@
   }
 
   button {
-    background-color: #4CAF50;
+    background-color: $mainColor;
     border: none;
     color: white;
     padding: 10px;
@@ -74,6 +77,12 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
   }
 
 </style>

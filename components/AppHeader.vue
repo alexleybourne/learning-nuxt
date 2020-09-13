@@ -23,7 +23,7 @@ export default {
 
 <style lang="scss">
 
-$mainColor: #3e97e6;
+@import '~assets/styles.scss';
 
 .header {
     display:flex;
@@ -45,7 +45,7 @@ $mainColor: #3e97e6;
 
 .header a {
     display: inline-block;
-    background: #0074D9;
+    background: $mainColor;
     color: #fff;
     padding: 0.3rem 1rem;
     margin-right: 0.5rem;

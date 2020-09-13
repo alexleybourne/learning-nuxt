@@ -22,5 +22,18 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+
+  @import '~assets/styles.scss';
+
+  form {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+
+  button {
+    margin: 0 10px;
+  }
+
 </style>
