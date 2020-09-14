@@ -4,8 +4,9 @@
       <hr>
       <br>
       <h3>Random Joke:</h3>
-      <h2>{{ this.joke }}</h2>
-      <button @click='getJoke()' >New joke <ion-icon name="repeat-outline"></ion-icon></button>
+      <p>{{ this.joke }}</p>
+      <br>
+      <button @click='getJoke()' >New joke <ion-icon name="repeat"></ion-icon></button>
     </div>
 </template>
 

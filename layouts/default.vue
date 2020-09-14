@@ -99,6 +99,10 @@
     }
   }
 
+  h3 {
+    color: $mainColor;
+  }
+
   ion-icon {
     filter: invert(1);
     margin-left: 4px;

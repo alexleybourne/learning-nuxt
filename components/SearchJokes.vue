@@ -1,7 +1,7 @@
 <template>
   <form @submit.prevent="onSubmit">
     <input type="text" v-model="text" placeholder="Search Jokes">
-    <button type="submit">Search</button>
+    <button type="submit">Search <ion-icon name="search-outline"></ion-icon></button>
   </form>
 </template>
 
