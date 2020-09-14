@@ -4,6 +4,7 @@
       <hr>
       <br>
       <h3>Random Joke:</h3>
+      <LineLoader v-if="this.loading"/>
       <span><p>{{ this.joke }}</p><CopyClipboard :data="this.joke" /></span>
       <br>
       <button @click='getJoke()' >New joke <ion-icon name="repeat"></ion-icon></button>
@@ -29,6 +30,7 @@ export default {
   data() {
     return {
       joke: '',
+      loading: true,
     }
   },
   methods: {
@@ -43,7 +45,8 @@ export default {
       try {
         const res = await axios.get(`https://icanhazdadjoke.com/`, config);
         console.log(res);
-        this.joke = res.data.joke
+        this.joke = res.data.joke;
+        this.loading = false;
       } catch (err) {
         console.log(err);
       }
