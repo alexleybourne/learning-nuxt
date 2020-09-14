@@ -28,11 +28,6 @@ export default {
 
 @import '~assets/styles.scss';
 
-// Dark Mode Styling
-//   :root {
-//     filter: invert(1) hue-rotate(180deg);
-//   }
-
 .header {
     display:flex;
     justify-content:space-between;
