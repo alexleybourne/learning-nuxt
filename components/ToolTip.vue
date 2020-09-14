@@ -9,6 +9,16 @@
 export default {
   name: 'ToolTip',
   props: ['text'],
+  data() {
+    return {
+      styling: {
+        height: this.height,
+        background: this.color,
+        marginTop: this.marginTop,
+        animationDelay: this.delay,
+      }
+    }
+  },
 }
 </script>
 
@@ -16,13 +26,12 @@ export default {
 
   @import '~assets/styles.scss';
 
-  span {
-    width: min-content;
-  }
-
   .tooltip {
     position: relative;
-    display: inline-block;
+    display: flex;
+    align-self: center;
+    width: min-content;
+    height: min-content;
   }
 
 
@@ -32,7 +41,7 @@ export default {
     align-items: center;
     justify-content: center;
     width: 120px;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
     font-size: 12px;
     text-align: center;
