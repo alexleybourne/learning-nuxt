@@ -45,11 +45,13 @@ export default {
     bottom: 20%;
     left: -130%;
     margin-left: -60px;
-    transition-duration: 0.2s;
+    transition-duration: 0.3s;
+    transform: translateX(6px);
   }
 
   .tooltip:hover .text {
     opacity: 1;
+    transform: translateX(0);
   }
   
 </style>
