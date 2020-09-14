@@ -4,7 +4,7 @@
       <hr>
       <br>
       <h3>Random Joke:</h3>
-      <p>{{ this.joke }}</p>
+      <span><p>{{ this.joke }}</p><CopyClipboard :data="this.joke" /></span>
       <br>
       <button @click='getJoke()' >New joke <ion-icon name="repeat"></ion-icon></button>
     </div>

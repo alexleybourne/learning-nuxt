@@ -106,6 +106,13 @@
   ion-icon {
     filter: invert(1);
     margin-left: 4px;
+    pointer-events: none;
+  }
+
+  span {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
   }
 
 </style>

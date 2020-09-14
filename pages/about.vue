@@ -7,8 +7,8 @@
     </div>
     <br>
     <div>
-      <a href="https://twitter.com/alexleybourne" target="_blank" alt="Twitter" name="Twitter"><ion-icon name="logo-twitter" alt="Twitter"></ion-icon> Follow Me</a>
-      <a class="left-space" href="https://github.com/alexleybourne/learning-nuxt" target="_blank" alt="Github" name="Github"><ion-icon name="logo-github" alt="Github"></ion-icon> Github Project</a>
+      <a href="https://twitter.com/alexleybourne" target="_blank" alt="Twitter" title="Follow me on Twitter"><ion-icon name="logo-twitter" alt="Twitter"></ion-icon> Follow Me</a>
+      <a class="left-space" href="https://github.com/alexleybourne/learning-nuxt" target="_blank" alt="Github" title="See the Github Project"><ion-icon name="logo-github" alt="Github"></ion-icon> Github Project</a>
     </div>
   </div>
 </template>

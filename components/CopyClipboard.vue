@@ -1,5 +1,5 @@
 <template>
-  <button @click="copyToClipboard" ><ion-icon name="copy-outline"></ion-icon></button>
+  <button @click="copyToClipboard" title="copy to clipboard" ><ion-icon name="copy-outline"></ion-icon></button>
 </template>
 
 <script>
@@ -8,7 +8,6 @@ export default {
   props: ['data'],
   methods: {
     copyToClipboard() {
-      console.log(this.data);
       const el = document.createElement('textarea');
       el.value = this.data;
       el.setAttribute('readonly', '');
@@ -26,6 +25,10 @@ export default {
 <style lang="scss" scoped>
 
   @import '~assets/styles.scss';
+
+  ion-icon {
+    transform: translateX(-2px);
+  }
 
   button {
     height: 40px;

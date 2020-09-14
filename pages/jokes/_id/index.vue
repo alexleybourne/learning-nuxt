@@ -67,8 +67,4 @@ export default {
         width: 20%;
     }
 
-    span {
-        display: flex;
-    }
-
 </style>
