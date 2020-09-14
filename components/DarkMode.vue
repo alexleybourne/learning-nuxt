@@ -15,10 +15,16 @@ export default {
       active: false
     }
   },
+  mounted() {
+    const themeStylesheet = document.getElementById('theme');
+    if(themeStylesheet.href.includes('light')) {
+      console.log('TRIGGERED')
+      this.darkMode()
+    }
+  },
   methods: {
     darkMode() {
       this.active = !this.active
-      console.log(this.active)
       document.documentElement.classList.toggle('dark-mode')
     }
   }

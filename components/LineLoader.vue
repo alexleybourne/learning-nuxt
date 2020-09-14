@@ -46,7 +46,7 @@ export default {
 
   @keyframes loading {
     from {width: 0;}
-    to {width: 60%;}
+    to {width: 50%;}
   }
 
 </style>
