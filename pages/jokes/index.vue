@@ -12,6 +12,7 @@
 import axios from "axios";
 
 export default {
+  transition: 'slide',
   data() {
     return {
       jokes: [],
@@ -65,5 +66,4 @@ export default {
     min-height: 400px;
   }
   
-
 </style>

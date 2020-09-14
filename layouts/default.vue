@@ -60,7 +60,9 @@
     overflow: hidden;
     padding: 1rem 2rem;
     background: #fff;
-    transition-duration: 0.4s;
+    min-height: 300px;
+    height: auto;
+    transition-duration: 0.6s;
   }
 
   input {

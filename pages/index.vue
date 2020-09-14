@@ -15,6 +15,7 @@
 import axios from "axios";
 
 export default {
+  transition: 'slide',
   head() {
     return {
       title: "Dad Jokes",

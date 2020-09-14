@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div>
     <div>
       <h2>The best bad jokes on the internet.</h2>
       <p>Built off this fantastic <a class="blue" href="https://www.youtube.com/watch?v=ltzlhAxJr74">tutorial</a> by <a class="blue" href="https://twitter.com/traversymedia">Brad Traversy</a></p>
@@ -15,6 +15,7 @@
 
 <script>
 export default {
+  transition: 'slide',
   head() {
     return {
       title: "About the app",
