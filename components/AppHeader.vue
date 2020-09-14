@@ -11,6 +11,9 @@
           <li>
               <nuxt-link to="/about">About</nuxt-link>
           </li>
+          <li>
+              <DarkMode />
+          </li>
       </ul>
   </header>
 </template>
@@ -24,6 +27,11 @@ export default {
 <style lang="scss">
 
 @import '~assets/styles.scss';
+
+// Dark Mode Styling
+//   :root {
+//     filter: invert(1) hue-rotate(180deg);
+//   }
 
 .header {
     display:flex;
@@ -57,6 +65,12 @@ export default {
     }
 }
 
+li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @media only screen and (max-width: 600px) {
     ul {
         flex-direction: column;
@@ -64,6 +78,7 @@ export default {
 
     li {
         margin: 2px;
+        display: flex;
     }
 }
 

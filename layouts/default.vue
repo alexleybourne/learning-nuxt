@@ -32,11 +32,6 @@
 
   $mainColor: #3e97e6;
 
-  // Dark Mode Styling
-  // :root {
-  //   filter: invert(1) hue-rotate(180deg);
-  // }
-
   * {
     box-sizing: border-box;
     margin: 0;
