@@ -25,10 +25,22 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+
+  :root {
+    transition-duration: 0.2s;
+    .container {
+      background: #f1f1f1;
+    }
+  }
 
   .dark-mode {
     filter: invert(0.9) hue-rotate(180deg);
+    background: #fcfcfc;
+
+    .container {
+      background: #f1f1f1;
+    }
   }
 
 </style>

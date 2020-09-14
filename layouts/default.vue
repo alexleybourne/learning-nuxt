@@ -42,7 +42,7 @@
     font-family:Arial, Helvetica, sans-serif;
     font-size: 1rem;
     line-height: 1.6;
-    background: #f4f4f4;
+    background: none;
   }
 
   a {
