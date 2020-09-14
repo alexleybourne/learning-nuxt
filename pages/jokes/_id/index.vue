@@ -1,7 +1,7 @@
 <template>
     <div>
-        <nuxt-link to="/jokes">Back to Jokes</nuxt-link>
-        <h2>{{ this.joke }}</h2>
+        <nuxt-link to="/jokes"><ion-icon name="arrow-back-circle-outline"></ion-icon> Back to Jokes</nuxt-link>
+        <span><h2>{{ this.joke }}</h2><CopyClipboard :data="this.joke" /></span>
         <hr/>
         <small>Joke ID: {{ $route.params.id }}</small>
     </div>
@@ -45,5 +45,30 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+
+    @import '~assets/styles.scss';
+
+    h2 {
+        margin: 12px 0;
+        margin-bottom: 20px;
+    }
+
+    small {
+        color: lightgrey;
+    }
+
+    ion-icon {
+        filter: invert(0);
+        transform: translateY(2px);
+    }
+
+    .button {
+        width: 20%;
+    }
+
+    span {
+        display: flex;
+    }
+
 </style>
