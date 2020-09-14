@@ -36,7 +36,7 @@ export default {
   },
   methods: {
     async getJoke() {
-
+      
       const config = {
         headers: {
           'Accept': 'application/json'
