@@ -10,6 +10,7 @@ export default {
     'color',
     'marginTop',
     'delay',
+    'maxWidth',
   ],
   data() {
     return {
@@ -18,6 +19,7 @@ export default {
         background: this.color,
         marginTop: this.marginTop,
         animationDelay: this.delay,
+        maxWidth: this.maxWidth,
       }
     }
   },
@@ -33,7 +35,7 @@ export default {
     transform: translateY(4px);
     transition-duration: 0.1s;
     width: 0px;
-    max-width: 740px;
+    max-width: 700px;
     height: 16px;
     border-radius: 4px;
     background: $mainColor;
