@@ -1,6 +1,7 @@
 <template>
     <div>
         <nuxt-link to="/jokes"><ion-icon name="arrow-back-circle-outline"></ion-icon> Back to Jokes</nuxt-link>
+        <LineLoader v-if="this.loading" />
         <span><h2>{{ this.joke }}</h2><CopyClipboard :data="this.joke" /></span>
         <hr/>
         <small>Joke ID: {{ $route.params.id }}</small>
@@ -25,7 +26,8 @@ export default {
   },
   data() {
     return {
-      joke: ''
+      joke: '',
+      loading: true,
     }
   },
   async created() {
@@ -38,10 +40,11 @@ export default {
     try {
       const res = await axios.get(`https://icanhazdadjoke.com/j/${this.$route.params.id}`, config);
       this.joke = res.data.joke
+      this.loading = false
     } catch (err) {
       console.log(err);
     }
-  }
+  },
 }
 </script>
 
