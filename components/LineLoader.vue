@@ -33,6 +33,7 @@ export default {
     transform: translateY(4px);
     transition-duration: 0.1s;
     width: 0px;
+    max-width: 740px;
     height: 16px;
     border-radius: 4px;
     background: $mainColor;
