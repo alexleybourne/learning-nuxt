@@ -17,7 +17,12 @@
             name: 'description',
             content: 'My custom description'
           }
-        ]
+        ],
+        script: [
+          {
+            src: 'https://unpkg.com/ionicons@5.1.2/dist/ionicons.js'
+          }
+        ],
       }
     }
   }
@@ -26,6 +31,11 @@
 <style lang="scss">
 
   $mainColor: #3e97e6;
+
+  // Dark Mode Styling
+  // :root {
+  //   filter: invert(1) hue-rotate(180deg);
+  // }
 
   * {
     box-sizing: border-box;
@@ -55,6 +65,7 @@
     overflow: hidden;
     padding: 1rem 2rem;
     background: #fff;
+    transition-duration: 0.4s;
   }
 
   input {
@@ -79,10 +90,18 @@
     font-size: 16px;
     cursor: pointer;
     transition-duration: 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &:hover {
         transform: scale(1.1);
     }
+  }
+
+  ion-icon {
+    filter: invert(1);
+    margin-left: 4px;
   }
 
 </style>

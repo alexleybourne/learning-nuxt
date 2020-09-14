@@ -5,7 +5,7 @@
       <br>
       <h3>Random Joke:</h3>
       <h2>{{ this.joke }}</h2>
-      <button @click='getJoke()' >New joke</button>
+      <button @click='getJoke()' >New joke <ion-icon name="repeat-outline"></ion-icon></button>
     </div>
 </template>
 
@@ -55,5 +55,4 @@ export default {
 </script>
 
 <style>
-
 </style>
