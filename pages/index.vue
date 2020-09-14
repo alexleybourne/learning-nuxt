@@ -4,7 +4,7 @@
       <hr>
       <br>
       <h3>Random Joke:</h3>
-      <LineLoader v-if="this.loading"/>
+      <LineLoader v-if="this.loading" />
       <span><p>{{ this.joke }}</p><CopyClipboard :data="this.joke" /></span>
       <br>
       <button @click='getJoke()' >New joke <ion-icon name="repeat"></ion-icon></button>
@@ -58,5 +58,8 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+  p {
+    height: 40px;
+  }
 </style>

@@ -1,10 +1,29 @@
 <template>
-  <span></span>
+  <span :style="styling"></span>
 </template>
 
 <script>
 export default {
   name: 'LineLoader',
+  props: [
+    'height',
+    'color',
+    'marginTop',
+    'delay',
+  ],
+  data() {
+    return {
+      styling: {
+        height: this.height,
+        background: this.color,
+        marginTop: this.marginTop,
+        animationDelay: this.delay,
+      }
+    }
+  },
+  mounted() {
+    console.log(this.height);
+  }
 }
 </script>
 
@@ -16,9 +35,9 @@ export default {
     position: absolute;
     transform: translateY(4px);
     transition-duration: 0.1s;
-    height: 18px;
     width: 0px;
-    border-radius: 2px;
+    height: 16px;
+    border-radius: 4px;
     background: $mainColor;
     animation-name: loading;
     animation-duration: 1s;
@@ -27,7 +46,7 @@ export default {
 
   @keyframes loading {
     from {width: 0;}
-    to {width: 70vw;}
+    to {width: 78vw;}
   }
 
 </style>
