@@ -1,5 +1,7 @@
 <template>
-  <button @click="copyToClipboard" title="copy to clipboard" ><ion-icon name="copy-outline"></ion-icon></button>
+  <ToolTip text="Copy to Clipboard">
+    <button @click="copyToClipboard" title="copy to clipboard" ><ion-icon name="copy-outline"></ion-icon></button>
+  </ToolTip>
 </template>
 
 <script>
