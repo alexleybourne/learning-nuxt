@@ -32,6 +32,7 @@ export default {
     display:flex;
     justify-content:space-between;
     align-items:center;
+    margin-top: 2rem;
     margin-bottom: 1rem;
     padding-bottom:1rem;
     border-bottom: 1px dotted $mainColor;
