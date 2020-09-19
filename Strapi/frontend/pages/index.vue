@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="title">
-      <h1>Welcome to My Radio Show</h1>
+      <h1>Strapi Gallery</h1>
     </div>
     <div class="container">
       <div  v-for="album in filteredList" v-bind:key="album" class="max-w-sm rounded overflow-hidden shadow-lg p-1">
